@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    overflow-x: hidden;
+    background-color: #F7F7F7;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    padding: 25px;
+    transition: all ease .85s;
+    z-index: 100;
+    width: 100%;
+}
+/*________________________________*/
+/*On scroll nav responsive CSS*/
+nav.scroll {
+    padding: 10px;
+    background: #ffff;
+    position: fixed;
+    opacity: 0.8;
+  }
+  
+nav.scroll span {
+    font-size: 18px;
+    color: #1e1e1e;
+}
+  
+nav.scroll li {
+    color: #1e1e1e;
+}
+
+  /*________________________________*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+   display: inline-block;
+   margin-right: 15px; 
+ }
+
+span {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+span a {
+    text-decoration: none;
+    color: #434242;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #1e1e1e;
+    font-weight: 700 bold;
+}
+
+.background-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #393E46;
+    transition: all ease .65s;
+}
+
+.overlay-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.38);
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.overlay-text h1 {
+    font-size: 6.5em;
+    letter-spacing: .5px;
+    margin: 105px 0 0 200px;
+    font-family: 'Poppins', sans-serif;
+    flex-flow: column wrap;
+    color: #F7F7F7;
+}
+
+.overlay-text h2 {
+    margin: 0 0 5px 200px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 300;
+    font-size:  2rem;
+    color: #F7F7F7;
+}
+
+.overlay-text p {
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    font-weight: 300;
+    font-size: 18px;
+    color: #F7F7F7;
+    margin: 5px 0 10px 200px;
+}
+
+.overlay-picture {
+    display: inline-flex;
+}
+
+.overlay-picture .picture {
+    position: relative;
+    height: 750px;
+    width: 1000px;
+    margin: 0 0 0 57vh;
+}
+
+.DownloadCV_button a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.DownloadCV_button {
+  align-items: center;
+  margin: 15px 0 10px 200px;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #393E46;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.DownloadCV_button:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.DownloadCV_button:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+.DownloadCV_button:hover {
+  border-color: #b5b5b5;
+}
+
+.DownloadCV_button:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+
+.about-me {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 800px;
+    transition: all ease .65s;
+}
+
+.about-me h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: .5vh;
+}
+
+.about-me p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+/*Skills*/
+.skills-text-container {
+    display:flex;
+}
+
+.skills-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+
+.container .progress-container {
+    margin-bottom: 25px;
+}
+
+.container .progress-container h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #393E46;
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
+}
+
+.container .progress-container .progress-bar {
+    position: relative;
+    width: 600px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
+}
+
+.container .progress-container .progress-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    transition: width .5s linear;
+}
+
+/*FOOTER*/
+footer {
+    font-family: 'Poppins', sans-serif;
+    background: #333;
+    color: #ffff;
+    text-align: center;
+    padding: 50px;
+ }
+
+.social-facebook-link, .social-twitter-link, .social-github-link {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px 15px 5px 5px;
+    color: #ffff;
+}
+
+.social-facebook-link a, .social-twitter-link a, .social-github-link a {
+    color: #ffff;
+    font-size: 25px;
+}
